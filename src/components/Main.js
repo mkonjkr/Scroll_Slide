@@ -5,7 +5,7 @@ const Main = () => {
 
   const name_changes = () => {
     if (country) {
-      document.querySelector(".main_name").innerHTML = "Jaehuyk Jeong";
+      document.querySelector(".main_name").innerHTML = "Jaehyuk Jeong";
       document.querySelector(".logo_country").innerHTML = "KOR";
       document.querySelector(".logo_name").innerHTML = "JJ";
       country = false;
