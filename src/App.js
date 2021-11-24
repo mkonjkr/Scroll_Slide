@@ -3,16 +3,15 @@ import Main from "./components/Main.js";
 import About from "./components/About.js";
 import "./App.css";
 import Skills from "./components/Skills.js";
-
-
+import { CustomCursor } from "./components/Cursor.jsx";
 
 const App = () => {
   return (
     <div className="contents">
-
-        <Main />
-        <About />
-        <Skills />
+      <CustomCursor />
+      <Main />
+      <About />
+      <Skills />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import Palmtree from "../img/palmtree.jpg";
 
 const Main = () => {
   let country = false;
@@ -22,8 +23,11 @@ const Main = () => {
       <div className="logo_country" onClick={name_changes}>
         KOR
       </div>
-      <div className="main_name">Jaehyuk Jeong</div>
-      <div className="main_job">Front-End Developer & UI/UX Designer</div>
+      <div className="main_content">
+        <div className="main_name">Jaehyuk Jeong</div>
+        {/* <div className="main_job">Front-End Developer & UI/UX Designer</div> */}
+        <img src={Palmtree} alt="Palmtree" className="main_image" />
+      </div>
     </div>
   );
 };

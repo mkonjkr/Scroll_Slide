@@ -8,6 +8,7 @@
 body {
   margin: 0;
   width: 100%;
+  cursor: none;
 }
 
 .contents {
@@ -20,41 +21,60 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   font-family: "Bai Jamjuree", sans-serif;
   margin-bottom: 150px;
 }
 
 .logo_name {
   position: absolute;
-  left: 3%;
-  top: 4%;
-  font-size: 1.5vw;
-  font-weight: 300;
+  left: 5%;
+  top: 5%;
+  font-size: 1.2vw;
+  font-weight: 700;
   color: #464646;
+}
+
+.logo_name:before {
+  content: "";
+  position: absolute;
+  width: 5vw;
+  left:-6vw;
+  height: 1px;
+  top: calc(50% + 1px);
+  border-bottom: 1px solid #2943F0;
+  transform: translate3d(0, -50%, 0);
 }
 
 .logo_country {
   position: absolute;
   right: 5%;
   top: 4%;
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 1.5vw;
+  font-weight: 700;
   color:#464646;
 }
 
-.main_name {
-
-  /* font-family: "Bodoni Moda", serif; */
-  text-align: center;
-  font-size: 5vw;
-  font-weight: 600;
-  animation: fadeIn ease 1.5s;
-  color:#fa5959;
-
+.main_content {
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes fadeIn {
+.main_image {
+  width: 550px;
+  height: 600px;
+}
+
+.main_name {
+  /* font-family: "Bodoni Moda", serif; */
+  width: 30%;
+  font-size: 60px;
+  font-weight: 600;
+ /*  animation: fadeIn ease 1.5s; */
+  color:#2943F0/* #fa5959 */;
+}
+
+
+/* @keyframes fadeIn {
   0% {
     transform: scale(0);
     opacity: 0;
@@ -64,7 +84,7 @@ body {
     opacity: 100;
     transform: scale(1);
   }
-}
+} */
 
 .main_job {
   /* font-family: 'Montserrat', sans-serif; */
@@ -75,13 +95,14 @@ body {
   transform: translateY(-30px);
   animation-delay: 1.5s;
   opacity: 0;
+  color: #2943F0;
 }
 
 
 @keyframes gGjJEE {
   0% {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-90px);
   }
 
   100% {
@@ -102,7 +123,8 @@ body {
 /*   transition: transform 5s ease-out 0s; */
   font-size: 6vw;
   font-weight: 700;
-  color: #fa5959;
+  color: #DC00C2;
+  letter-spacing: -0.05em;
 /*   color: #999; */
  /*  opacity: 0.5; */
 }
@@ -118,11 +140,21 @@ body {
 
 }
 
-.skills {
+.content_skill {
   width: 100%;
   height: 100vh;
-  background-color: #fa5959;
+  background-color: #2943F0;
   color: #fff;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 4vw;
+  letter-spacing: -0.05em;
 }
+
+
+/* .sklil_list {
+  display: flex;
+  flex-direction: column; 
+} */
+
+
+

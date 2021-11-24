@@ -22,7 +22,7 @@ function About() {
         position_div = scroll < dy - 100 ? true : false;
       } */
 
-    if (scrollX >= document.documentElement.clientWidth * 0.275) {
+    if (scrollX >= document.documentElement.clientWidth * 0.278) {
     } else {
       document.querySelector(".test2").style.transform = `translateX(${
         temp * 0.055
@@ -36,10 +36,7 @@ function About() {
   return (
     <div className="div2">
       <div className="test2" ref={scrollRef}>
-        ABOUT
-      </div>
-      <div>
-         ME
+        ABOUT ME
       </div>
       <div className="aboutText">
         Front-end developer who cares deeply about user experience. Serious
