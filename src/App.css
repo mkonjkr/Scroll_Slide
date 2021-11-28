@@ -4,15 +4,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;700&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 body {
   margin: 0;
   width: 100%;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .contents {
   font-family: "Bai Jamjuree", sans-serif;
+  background-color: #f4ebde;
 }
 
 .content_top {
@@ -21,17 +23,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Bai Jamjuree", sans-serif;
+  font-family: Type 4;/* "Bai Jamjuree", sans-serif; */
   margin-bottom: 150px;
 }
 
 .logo_name {
   position: absolute;
   left: 5%;
-  top: 5%;
+  top: 3%;
   font-size: 1.2vw;
-  font-weight: 700;
+  font-weight: 500;
   color: #464646;
+  letter-spacing: -0.05em;
+  /* font-family: 'Cinzel', serif; */
 }
 
 .logo_name:before {
@@ -48,29 +52,105 @@ body {
 .logo_country {
   position: absolute;
   right: 5%;
-  top: 4%;
-  font-size: 1.5vw;
-  font-weight: 700;
+  top: 3%;
+  font-size: 1.3vw;
+  font-weight: 500;
   color:#464646;
+  letter-spacing: -0.05em;
+  /* font-family: 'Cinzel', serif; */
 }
 
 .main_content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  font-family: 'Cinzel', serif;
 }
 
-.main_image {
-  width: 550px;
-  height: 600px;
+.main_images {
+
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
 }
+
+
+.main_images img {
+  width: 25vw;
+}
+
+.main_images div {
+  position: absolute;
+  opacity: 0;
+}
+
+.main_img1 {
+  left: 10vw;
+  top: 7vh;
+  animation: main_img 10s linear infinite;
+}
+
+.main_img2 {
+  right: 10vw;
+  bottom:12vh;
+  animation: main_img 10s linear infinite;
+  animation-delay: 3s;
+}
+
+.main_img3 {
+  right: 12vw;
+  top: 7vh;
+  animation: main_img 10s linear infinite;
+  animation-delay: 9s;
+}
+
+.main_img4 {
+  left: 16vw;
+  bottom: 18vh;
+  animation: main_img 10s linear infinite;
+  animation-delay: 6s;
+}
+
+@keyframes main_img {
+
+  0% {
+    opacity: 1;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .main_name {
-  /* font-family: "Bodoni Moda", serif; */
-  width: 30%;
-  font-size: 60px;
-  font-weight: 600;
- /*  animation: fadeIn ease 1.5s; */
-  color:#2943F0/* #fa5959 */;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+  left: 25vw;
+  top: 22vh;
+  font-size: 5vw;
+/*   font-weight: 600; */
+  z-index: 99;
 }
 
 
@@ -113,8 +193,10 @@ body {
 
 
 .div2 {
-  height: 100vh;
+  height: 80vh;
   position: relative;
+  position: sticky;
+  top:20%;
   overflow: hidden;
   align-items: center;
 }
@@ -123,8 +205,9 @@ body {
 /*   transition: transform 5s ease-out 0s; */
   font-size: 6vw;
   font-weight: 700;
-  color: #DC00C2;
+ /*  color: #DC00C2; */
   letter-spacing: -0.05em;
+  font-family: 'Cinzel', serif;
 /*   color: #999; */
  /*  opacity: 0.5; */
 }
@@ -137,19 +220,27 @@ body {
   transform: translateY(40px);
   margin-left: 28%;
   margin-right: 20%;
+  font-family: 'Cinzel', serif;
 
 }
 
 .content_skill {
+  position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #2943F0;
+  background-color: #64b2d8;
   color: #fff;
-  font-family: "Bai Jamjuree", sans-serif;
+  /* font-family: "Bai Jamjuree", sans-serif; */
+  font-family: 'Cinzel', serif;
   font-size: 4vw;
   letter-spacing: -0.05em;
 }
 
+.content_skill p {
+  position: absolute;
+  font-size: 3.5vw;
+  left: 4%;
+}
 
 /* .sklil_list {
   display: flex;

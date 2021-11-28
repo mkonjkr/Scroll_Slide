@@ -1,5 +1,4 @@
 import React from "react";
-import Palmtree from "../img/palmtree.jpg";
 
 const Main = () => {
   let country = false;
@@ -25,8 +24,35 @@ const Main = () => {
       </div>
       <div className="main_content">
         <div className="main_name">Jaehyuk Jeong</div>
-        {/* <div className="main_job">Front-End Developer & UI/UX Designer</div> */}
-        <img src={Palmtree} alt="Palmtree" className="main_image" />
+
+        <div className="main_images">
+          <div className="main_img1">
+            <img
+              src="https://garciasalmeron.com/wp-content/uploads/2021/07/Livro-NATALIA1443_v2.jpg"
+              alt="Img1"
+            />
+          </div>
+          <div className="main_img2">
+            <img
+              src="https://garciasalmeron.com/wp-content/uploads/2021/08/MIPOUNET-MARIA-GARCIA-SALMERON-14.jpg"
+              alt="Img2"
+            />
+          </div>
+
+          <div className="main_img3">
+            <img
+              src="https://garciasalmeron.com/wp-content/uploads/2021/05/10-scaled.jpeg"
+              alt="Img3"
+            />
+          </div>
+
+          <div className="main_img4">
+            <img
+              src="https://garciasalmeron.com/wp-content/uploads/2021/05/10-scaled.jpeg"
+              alt="Img4"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
