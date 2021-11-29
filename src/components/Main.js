@@ -24,7 +24,7 @@ const Main = () => {
       </div>
       <div className="main_content">
         <div className="main_name">Jaehyuk Jeong</div>
-
+        <div className="main_job">Front-End Developer</div>
         <div className="main_images">
           <div className="main_img1">
             <img
