@@ -9,13 +9,12 @@
 body {
   margin: 0;
   width: 100%;
-  /* cursor: none; */
+
 }
 
 .contents {
-  font-family: "Bai Jamjuree", sans-serif;
-  /* background-color: #f4ebde; */
-  /* background-color: #DED9C4; */
+  /* font-family: "Bai Jamjuree", sans-serif; */
+  font-family: Helvetica Arial,Noto Sans,sans-serif;
 }
 
 .content_top {
@@ -25,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: Type 4;/* "Bai Jamjuree", sans-serif; */
-  margin-bottom: 150px;
+  margin-bottom: 250px;
 }
 
 .logo_name {
@@ -48,6 +47,7 @@ body {
   top: calc(50% + 1px);
   border-bottom: 1px solid;
   transform: translate3d(0, -50%, 0);
+  color: #00539CFF;
 }
 
 .logo_country {
@@ -67,7 +67,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Cinzel', serif;
+/*   font-family: 'Cinzel', serif; */
 }
 
 .main_images {
@@ -190,34 +190,73 @@ body {
 
 
 .div2 {
-  height: 80vh;
-  position: sticky;
-  top:20%;
-  overflow: hidden;
+  height: 100vh;
+  /* position: sticky;
+  top:20%; */
+  /* overflow: hidden; */
   align-items: center;
 }
 
 .test2 {
-/*   transition: transform 5s ease-out 0s; */
-  font-size: 6vw;
+  position: absolute;
+  font-size: 9vw;
   font-weight: 700;
- /*  color: #DC00C2; */
   letter-spacing: -0.05em;
-  font-family: 'Cinzel', serif;
+  margin-left: 18%;
+  margin-top: -5%;
+  font-family: Helvetica Arial,Noto Sans,sans-serif;
   color: #00539CFF;
 }
 
 .aboutText {
   position: absolute;
-  font-size: 1.5vw;
-  font-weight: 200;
+  font-size: 2.8vw;
+/*   font-weight: 200; */
   text-align: left;
   transform: translateY(40px);
-  margin-left: 28%;
-  margin-right: 20%;
-  font-family: 'Cinzel', serif;
+  margin-left: 29%;
+  margin-right: 4%;
+  margin-top: 5%;
+  font-family: Helvetica Arial,Noto Sans,sans-serif;
+/*   font-family: 'Poppins', serif; */
 
 }
+
+.loader-wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #00539CFF;
+}
+
+h1 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.absolute {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
 
 /* .content_skills {
   position: relative;
@@ -228,38 +267,4 @@ body {
   font-family: 'Cinzel', serif;
   font-size: 4vw;
   letter-spacing: -0.05em;
-
 } */
-
-.skills {
-  position: relative;
-  height: 100vh;
-}
-.skill1, .skill2 {
-  min-width: 100vw;
- min-height: 100vh;
- display: flex;
- justify-content: center;
- align-items: center;
-/*   position: relative;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  font-family: 'Cinzel', serif;
-  font-size: 3vw;
-  letter-spacing: -0.05em;
-  color: #fff; */
-}
-
-.skill1 {
-  background-color: #FFD662FF;
-}
-
-
-.skill2 {
-  background-color: #b7b7a4;
-}
-
-
-
-

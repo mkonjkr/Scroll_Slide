@@ -17,7 +17,7 @@ const Main = () => {
     }
   };
   return (
-    <div className="content_top">
+    <div className="content_top" data-scroll-section>
       <div className="logo_name">JJ</div>
       <div className="logo_country" onClick={name_changes}>
         KOR
