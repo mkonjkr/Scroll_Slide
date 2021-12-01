@@ -1,6 +1,6 @@
 import React from "react";
 
-const Main = () => {
+const Header = () => {
   let country = false;
 
   const name_changes = () => {
@@ -58,4 +58,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Header;

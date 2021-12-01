@@ -29,9 +29,10 @@ function About() {
   /* const About = () => { */
   return (
     <div className="div2" data-scroll-section>
-      <div className="test2" ref={scrollRef}>
-        ABOUT ME
+      <div className="about" /* ref={scrollRef} */>
+        ABOUT
       </div>
+      <div className="me">ME</div>
       <div className="aboutText">
         Front-end developer who cares deeply about user experience. Serious
         passion for UI design and new technologies. Currently, I’m learning on
